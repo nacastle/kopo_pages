@@ -5,13 +5,53 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<title>나성주's KOPO HW</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 <style>
+body{
+       background-color: teal;
+       color: black;
+       
+    }
+
+
+</style>
 </head> 
 <body> 
 	<h1 style="text-align:center">KOPO 과제 제출 페이지</h1>
 	<hr width="100%">
 	
-  	<a href="https://nacastle.tistory.com/" style="font-size:1.17em; font-weight:bold; color:black; text-decoration:none;"> 개발자에 입문하는 블로그 </a>
+  	<a href="https://nacastle.tistory.com/" style="font-size:1.17em; font-weight:bold; color:blue; text-decoration:none;"> 개발자에 입문하는 블로그 </a>
 	<p> 과제를 업로드하고 배운 내용을 정리하는 블로그입니다.</p>
+	<br>
+	
+	 <h2>HW02</h2>
+	<fieldset>
+        <legend> [소스트리(Sourcetree) 기초] </legend>
+        		<ol>
+          <li style="font-size:120%"><b>소스트리 개념</b></li>
+          <pre>개발자들에게는 자신이 개발한 소스 관리가 늘 큰 부담이 됩니다. 그래서 이것을 관리하고자 다양한 형상관리 툴을 쓰고 있지요. 대표적인 
+툴이라고 한다면 SVN, CVS 등이 있을 것입니다. 요즘에는 우리나라에서 git을 많이 쓰고 있지요. git을 사용하는 방법은 여러 가지가 있습니다.
+          
+"소스트리는 환경을 시각화해서 쉽게 git을 사용할 수 있게 도와주는 프로그램입니다."
+IDE 툴인 이클립스에서 git을 연결해서 사용할 수도 있죠. 그리고 git bash 등을 사용해 CLI환경에서 직접 명령어를 쳐서 git을 사용할 수도 있습니다.그러
+나 GUI 환경에 익숙한 분들의 경우에는 CLI가 매우 낯설기 마련이죠. 바로 이 과정을 좀 더 시각화하여 쉽게 git을 사용할 수 있게 도와주는 프로그램이 
+'소스트리'입니다.</pre>
+			<li style="font-size:120%"><b>소스트리 사용영상</b></li>
+          <pre>
+다음 아래의 작업을 수행해 보았습니다.
+
+<pre style="font-size:120%"><b>-Clone
+-Branch 생성, 체크아웃, 삭제
+-Commit
+-Pull</b></pre></pre>
+<video style="width:300; height:200" controls>
+
+    <source src="HW2_소스트리.mp4" type="video/mp4">
+    이 문장은 사용자의 웹 브라우저가 video 요소를 지원하지 않을 때 나타납니다!
+
+</video>                 
+		</ol>
+    </fieldset>
+	<br>
 	<br>
 
 	
@@ -21,21 +61,24 @@
 
 		<ol>
           <li style="font-size:120%"><b>저장소(Repository)</b></li>
-          <pre>프로젝트가 거주(live)할 수 있는 디렉토리나 저장 공간. 깃허브 사용자는 종종 “repo”로 줄여서 사용한다. 당신의 컴퓨터 안의 로컬 폴더가 될 수도 있고, 깃허브나 다른 온라인 호스트의 저장 공간이 될 수도 있다. 저장소 안에 코드 화일, 텍스트 화일, 이미지 화일을 저장하고, 이름붙일 수 있다.</pre>
+          <pre>프로젝트가 거주(live)할 수 있는 디렉토리나 저장 공간. 깃허브 사용자는 종종 “repo”로 줄여서 사용한다. 당신의 컴퓨터 안의 로컬 폴더가
+될 수도 있고, 깃허브나 다른 온라인 호스트의 저장 공간이 될 수도 있다. 저장소 안에 코드 화일, 텍스트 화일, 이미지 파일을 저장하고, 이름붙일 수 있다.</pre>
 			<li style="font-size:120%"><b>브랜치(Branch)</b></li>
-          <pre>여러 명이 하나의 프로젝트에서 깃 없이 작업하는 것이 얼마나 혼란스러울 것인가? 일반적으로, 작업자들은 메인 프로젝트의 브랜치를 따와서(branch off), 자신이 변경하고 싶은 자신만의 버전을 만든다. 작업을 끝낸 후, 프로젝트의 메인 디렉토리인 “master”에 브랜치를 다시 “Merge”한다.</pre>
+          <pre>여러 명이 하나의 프로젝트에서 깃 없이 작업하는 것이 얼마나 혼란스러울 것인가? 일반적으로, 작업자들은 메인 프로젝트의 브랜치를 따와서
+(branch off), 자신이 변경하고 싶은 자신만의 버전을 만든다. 작업을 끝낸 후, 프로젝트의 메인 디렉토리인 “master”에 브랜치를 다시 “Merge”한다.</pre>
 			<li style="font-size:120%"><b>커밋(Commit)</b></li>
-          <pre>깃에게 파워를 주는 명령이다. 커밋하면, 그 시점의 당신의 저장소의 “스냅샷”을 찍어, 프로젝트를 이전의 어떠한 상태로든 재평가하거나 복원할 수 있는 체크포인트를 가질 수 있다.</pre> 
+          <pre>깃에게 파워를 주는 명령이다. 커밋하면, 그 시점의 당신의 저장소의 “스냅샷”을 찍어, 프로젝트를 이전의 어떠한 상태로든 재평가하거나 
+복원할 수 있는 체크포인트를 가질 수 있다.</pre> 
 			<li style="font-size:120%"><b>깃허브 사용영상</b></li>
           <pre>
 다음 아래의 작업을 수행해 보았습니다.
 
-<b>-Repository 생성/삭제
+<pre style="font-size:120%"> <b>-Repository 생성/삭제
 -Branch 생성/삭제
 -File Upload
 -Commit
--Read-me</b></pre>
-			<video style="width:576; height:360" controls>
+-Read-me</b></pre></pre>
+			<video style="width:300; height:200" controls>
 
     <source src="HW1_깃헙.mp4" type="video/mp4">
     이 문장은 사용자의 웹 브라우저가 video 요소를 지원하지 않을 때 나타납니다!
@@ -44,32 +87,7 @@
             </ol>
     </fieldset>
   
-  <h2>HW02</h2>
-	<fieldset>
-        <legend> [소스트리(Sourcetree) 기초] </legend>
-        		<ol>
-          <li style="font-size:120%"><b>소스트리 개념</b></li>
-          <pre>개발자들에게는 자신이 개발한 소스 관리가 늘 큰 부담이 됩니다. 그래서 이것을 관리하고자 다양한 형상관리 툴을 쓰고 있지요. 대표적인 툴이라고 한다면 SVN, CVS 등이 있을 것입니다. 요즘에는 우리나라에서 git을 많이 쓰고 있지요. git을 사용하는 방법은 여러 가지가 있습니다.
-          
-"소스트리는 환경을 시각화해서 쉽게 git을 사용할 수 있게 도와주는 프로그램입니다."
-IDE 툴인 이클립스에서 git을 연결해서 사용할 수도 있죠. 그리고 git bash 등을 사용해 CLI환경에서 직접 명령어를 쳐서 git을 사용할 수도 있습니다. 그러나 GUI 환경에 익숙한 분들의 경우에는 CLI가 매우 낯설기 마련이죠. 바로 이 과정을 좀 더 시각화하여 쉽게 git을 사용할 수 있게 도와주는 프로그램이 '소스트리'입니다.
-          </pre>
-			<li style="font-size:120%"><b>소스트리 사용영상</b></li>
-          <pre>
-다음 아래의 작업을 수행해 보았습니다.
-
-<b>-Clone
--Branch 생성, 체크아웃, 삭제
--Commit
--Pull</b></pre>
-<video style="width:576; height:360" controls>
-
-    <source src="HW2_소스트리.mp4" type="video/mp4">
-    이 문장은 사용자의 웹 브라우저가 video 요소를 지원하지 않을 때 나타납니다!
-
-</video>                 
-		</ol>
-    </fieldset>
+ 
   
   
 	
